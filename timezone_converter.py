@@ -85,12 +85,15 @@ st.set_page_config(
 )
 st.header('Time Zone Coverter Streamlit app')
 
+# Add some blank space
+st.markdown("##")
+
 # Create a dropdown to select a continent
-continent = st.sidebar.selectbox("Select a continent", continents)
+continent = st.sidebar.selectbox("1. Select a continent", continents)
 
 # Create a dropdown to select a country within the selected continent
 countries = list(timezone_dict[continent].keys())
-country = st.sidebar.selectbox("Select a country", countries)
+country = st.sidebar.selectbox("2. Select a country", countries)
 
 # Display the selected UTC offset
 st.markdown("### :earth_americas: Corresponding UTC time:")
@@ -99,8 +102,7 @@ utc_offset = datetime.now(pytz.timezone(timezone)).strftime('%z')
 st.markdown(f"> **{country}** time zone is **UTC{utc_offset[:-2]}:{utc_offset[-2:]}**")
 
 # Add some blank space
-st.markdown("#")
-
+st.markdown("##")
 
 # Create input for PST time
 st.markdown("### :clock10: PST time to UTC converter:")
@@ -113,7 +115,7 @@ try:
     target_time = pst_time.astimezone(pytz.timezone(timezone)).strftime("%I:%M %p %Z")
     st.markdown(f"> The corresponding time in **{country}** is **{target_time}**")
 except:
-    #st.markdown("<p><span style="color:blue">Invalid input format. Please enter PST time in format '10:00 AM PST'.</span></p>",
     st.markdown("""
-    :lock: Invalid input format. Please enter PST time in format '<span style="color:#7ef471"> 10:00 AM PST </span>'
+    :lock: Invalid input format. Please enter PST time in format 
+    '<span style="color:#7ef471"><b> 10:00 AM PST </b></span>'
     """, unsafe_allow_html=True)
