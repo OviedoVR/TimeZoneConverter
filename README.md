@@ -7,8 +7,8 @@ This app is intended to select a country, get its time zone in UTC format and ha
 
     * Customers often inform a deadline in PST time zone format
     * That need to be converted into UTC time zone format for my corresponding country
-    * However, one needs to know the corresponding UTC offset and the converted time in a straightfoward way.
-    * I mean, no adds and simple usage
+    * However, one needs to know the corresponding UTC offset and the converted time in a straightfoward way
+    * I mean, no boring ads and simple usage
 
 ## Steps for the solution:
 
