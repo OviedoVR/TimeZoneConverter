@@ -1,8 +1,9 @@
+# Required Python modules/packages
 import streamlit as st
 from datetime import datetime
 import pytz
 
-# Create dictionary with country name and corresponding timezone
+# Create a dictionary with country name and corresponding timezone
 timezone_dict = {
     "North America": {
         "United States": "America/New_York",
@@ -65,7 +66,7 @@ timezone_dict = {
     }
 }
 
-# Create list of continents
+# Create a list of continents
 continents = ["North America", "South America", "Europe", "Asia", "Australia"]
 
 
