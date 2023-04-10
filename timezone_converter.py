@@ -72,7 +72,7 @@ continents = ["North America", "South America", "Europe", "Asia", "Australia"]
 
 # Streamlit app:
 st.set_page_config(
-    page_title='Time Zone Coverter', 
+    page_title='Time Zone Converter', 
     page_icon='🌎',
     layout='centered',
     initial_sidebar_state='expanded',
