@@ -83,7 +83,7 @@ st.set_page_config(
         """
     }
 )
-st.header('Time Zone Coverter Streamlit app')
+st.header('Time Zone Converter Streamlit app')
 
 # Add some blank space
 st.markdown("##")
