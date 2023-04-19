@@ -52,7 +52,7 @@ timezone_dict = {
         "Philippines": "Asia/Manila",
         "Thailand": "Asia/Bangkok"
     },
-    "Australia": {
+    "Oceania": {
         "Australia": "Australia/Sydney",
         "New Zealand": "Pacific/Auckland",
         "Fiji": "Pacific/Fiji",
@@ -67,7 +67,7 @@ timezone_dict = {
 }
 
 # Create a list of continents
-continents = ["North America", "South America", "Europe", "Asia", "Australia"]
+continents = ["North America", "South America", "Europe", "Asia", "Oceania"]
 
 
 # Streamlit app:
